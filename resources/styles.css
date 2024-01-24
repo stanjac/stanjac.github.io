@@ -184,31 +184,42 @@ p.about {
     visibility: hidden;
     width: 0;
   }
+
   .portrait {
-    width: 80%;
+    width: 70%;
   }
+
   #products {
     flex-direction: column;
   }
+
   .product {
     width: 80%;
     margin: 1rem 0;
   }
-  h2 {
+
+  h1 {
+    font-family: "Damion", serif;
     font-size: 2rem;
   }
-  
-  h3 {
+
+  .banner h2,
+  .welcome h3 {
     font-size: 1.5rem;
   }
-
+  
+  .banner h3 {
+    font-size: 1rem;
+  }
+  
   .product h4 {
     font-size: 1rem;
   }
 
   .banner .text {
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
+
   #contacts {
     flex-direction: column;
     line-height: 2rem;
