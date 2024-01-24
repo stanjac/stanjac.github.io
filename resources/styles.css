@@ -1,0 +1,216 @@
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  background-color:rgb(232, 232, 232);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color:rgb(232, 232, 232);
+}
+
+
+/*Header*/
+header {
+  z-index: 5;
+  position: relative;
+  background-color:hsla(0 0% 100% / 0.5);
+}
+header .content {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 1rem;
+  border-bottom: lightgrey 1px;
+  border-top: lightgrey 1px;
+}
+
+.content .logo {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%;
+}
+
+h1 {
+  font-family: "Damion", serif;
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: end;
+  align-items:end;
+}
+
+nav li {
+  padding-left: 3.5rem;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  text-decoration:underline;
+}
+
+.icon {
+  width: 1rem;
+}
+
+.insta {
+  margin: auto;
+}
+
+/*Banner*/
+.banner {
+  background-image: url(./images/cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:33rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  top: -5rem;  
+}
+
+.banner .text {
+  text-align: center;
+  color:lightgray;
+  position:relative;
+  top: 3rem;  
+  font-family: Rubik;
+  font-weight: bold;
+  background-color:hsla(0, 0%, 0%, 0.5);
+  padding: 0.5rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  width:100%;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  width:100%;
+}
+
+/*products*/
+.welcome {
+  width: 100%;
+  text-align: center;
+  margin-bottom:1rem ;
+}
+
+#products {
+  padding: 1rem;
+}
+
+.product {
+  width: 30%;
+  box-shadow: lightgray 1px 1px;
+  background-color: white;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+}
+
+figcaption {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.product h4 {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+/*Team*/
+.portrait {
+  width: 40%;
+  padding: 1rem;
+}
+
+.portrait img {
+  width: 100%;
+}
+
+p.about {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+#about-us {
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.team {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/*contacts*/
+#contacts {
+  border-top:1px solid grey;
+  padding: 2rem 0;
+  align-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 860px) {
+  .content nav {
+    visibility: hidden;
+    width: 0;
+  }
+  .portrait {
+    width: 80%;
+  }
+  #products {
+    flex-direction: column;
+  }
+  .product {
+    width: 80%;
+    margin: 1rem 0;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .product h4 {
+    font-size: 1rem;
+  }
+
+  .banner .text {
+    line-height: 2.5rem;
+  }
+  #contacts {
+    flex-direction: column;
+    line-height: 2rem;
+  }
+}
